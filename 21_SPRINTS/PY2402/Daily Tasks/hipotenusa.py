@@ -1,6 +1,10 @@
-
 # Aula 17/04/2024** - Prof. Tom
-# Comando **Operadores Aritméticos** 😦
+# Comando **Operadores Aritméticos** 
+
+a = 4
+b = 3
+hipotenusa = (a*a) + (b*b)
+print(hipotenusa*hipotenusa)
 
 
 a = float(input("Digite o valor do cateto A: "))
