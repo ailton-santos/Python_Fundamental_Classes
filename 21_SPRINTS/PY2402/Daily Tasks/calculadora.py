@@ -1,3 +1,4 @@
+# Calculadora
 
 a=float(input("Informe o número A: "))
 
@@ -5,11 +6,10 @@ if a==0:
  print('Tu tá de brincadeira rapaz executa o código certo aí')
  exit()
 
-"""1. adição
+'''1. adição
 2. subtração
 3. multiplicação
-4. divisão
-"""
+4. divisão '''
 
 c=float(input("digite o número da operação que você deseja fazer: "))
 
@@ -33,33 +33,64 @@ elif c==3:
   print("O resultado de A*B é: ",a*b)
 elif c==4:
   print("O resultado de A/B é: ",a/b)
-=======
+
 # Calculadora com as funções soma, sobtração divisão e multiplicação
 
-val1,operacao,val2=input('operação:').split()
 
-print(val1,operacao,val2)
+from random import randint
 
-val1=int(val1)
+print(randint(0, 1000))
 
-val2 = int(val2)
+numero1 = randint(0, 1000)
+numero2 = randint(0, 1000)
+print(numero1)
+print(numero2)
 
-resultado=[]
+#apenas anotando os resultados
+resultado_soma = (numero1 + numero2)
+print("O resultado da soma é:", resultado_soma, "\n")
+resultado_sub = (numero1 - numero2)
+print("O resultado da subtração é:", resultado_sub, "\n")
+resultado_div = (numero1 / numero2)
+print("O resultado da divisão é:", resultado_div, "\n")
+resultado_mul = (numero1 * numero2)
+print("O resultado da multiplicação é:", resultado_mul, "\n")
 
-if operacao == '+':
-  resultado = val1+val2
+print("Resolva as quatro operações: \n")
+#soma--------------------------------------------
+print("Quanto é", numero1,"+",numero2, "?")
+resultado = int(input())
+if resultado == (numero1 + numero2) :
+  print("Certa resposta!\n")
+else:
+  print("Resposta errada!\n")
+#------------------------------------------------
 
-elif operacao == '-':
-  resultado = val1-val2
+#subtração---------------------------------------
+print("Quanto é", numero1, "-", numero2, "?")
+resultado = int(input())
+if resultado == (numero1 - numero2):
+  print("Certa resposta!\n")
+else:
+  print("Resposta errada!\n")
+#------------------------------------------------
 
-elif operacao == '*' or operacao=='x':
-  resultado = val1*val2
+#divisão-----------------------------------------
+print("Quanto é", numero1, "÷", numero2, "?")
+resultado = int(input())
+if resultado == (numero1 / numero2):
+  print("Certa resposta!\n")
+else:
+  print("Resposta errada!\n")
+#------------------------------------------------
 
-elif operacao == '/':
-  resultado = val1 / val2
 
-
-
-print(resultado)
-
+#multiplicação-----------------------------------
+print("Quanto é", numero1, "*", numero2, "?")
+resultado = int(input())
+if resultado == (numero1 * numero2):
+  print("Certa resposta!")
+else:
+  print("Resposta errada!")
+#------------------------------------------------
 
